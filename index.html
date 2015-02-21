@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Style Guide</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <div class="container">
+    
+    <h1>Style Guide</h1>
+
+    <p>Aaron W. Fuller</p> 
+
+    <!-- Typography -->
+    
+    <h2>Typography</h2>
+
+    <p>All text is set in <strong>Open Sans</strong> with font-smoothing: antialised.</p>
+
+    <p>The base font-size is 1em, with a line-height of 1.45.</p>
+  </div>
+  <div class="container">
+
+    <div class="example">
+      <h1 class="heading--primary">Heading One</h1>
+      <p>An example paragraph with <strong>strong text</strong>, <em>emphasized text</em> and <a href="#">a link</a>, spanning multiple lines so you can see the line-height.</p>
+    
+      <h2 class="heading--secondary">Heading Two</h2>
+      <p>An example paragraph with <strong>strong text</strong> and <em>emphasized text</em>, spanning multiple lines so you can see the line-height.</p>
+    
+      <h3>Heading Three</h3>
+      <p class="hushed">An example paragraph with the muted class. It has <strong>strong text</strong> and <em>emphasized text</em>, spanning multiple lines so you can see the line-height.</p>
+    
+      <h4>Heading Four</h4>
+      <p>An example paragraph with <strong>strong text</strong> and <em>emphasized text</em>, spanning multiple lines so you can see the line-height.</p>
+    
+      <h5>Heading Five</h5>
+      <p>An example paragraph with <strong>strong text</strong> and <em>emphasized text</em>, spanning multiple lines so you can see the line-height.</p>
+    
+      <h6>Heading Six</h6>
+      <p>An example paragraph with <strong>strong text</strong> and <em>emphasized text</em>, spanning multiple lines so you can see the line-height.</p>
+    </div>
+    
+  </div>
+
+  <div class="container">
+
+    <!-- Color -->
+   
+    <h2>Color</h2>
+    <p>There are two accent colors: <span class="primary"><strong>primary for main actions</strong></span> and <span class="secondary"><strong>secondary for other actions</strong></span>.</p>
+    <p>Basic <a href="#">text links</a> use the secondary color.</p>
+    <div class="example">
+      <ul class="colors">
+        <li class="c-black">Black</li>
+        <li class="c-muted">Muted</li>
+        <li class="c-primary">Primary</li>
+        <li class="c-secondary">Secondary</li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="container">
+  
+    <!-- Buttons -->
+    
+    <h2>Buttons</h2>
+    <p>Buttons are used to draw attention by the user to various website functions.</p>
+    <div class="example">
+      <p><a href="#" class="btn">Default button</a></p>
+      <p><a href="#" class="btn btn-disabled">Default disabled button</a></p>
+      <p><a href="#" class="btn-secondary">Secondary button</a></p>
+      <p><a href="#" class="btn-secondary btn-disabled">Secondary button disabled</a></p>
+      <p><a href="#" class="btn-muted">Muted button</a></p>
+      <p><a href="#" class="btn-muted btn-disabled">Muted button disabled</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Alerts -->
+    <h2>Alerts</h2>
+    <p>Alerts are used for system messages to the user.</p>
+    <div class="example">
+      <p class="alert">This is a <strong>neutral alert</strong>. <a href="#" class="alert_close">&times;</a></p>
+      <p class="alert alert-success">This is a <strong>success alert</strong>. <a href="#" class="alert_close">&times;</a></p>
+      <p class="alert alert-error">This is a <strong>error alert</strong>. <a href="#" class="alert_close">&times;</a></p>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <!-- Tables -->
+    <h2>Tables</h2>
+    <p>Tables are used to display data for the user.</p>
+    <div class="example">
+      <table class="table-responsive-vertical">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>James</td>
+            <td>Home</td>
+            <td>jrah</td>
+
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Emily</td>
+            <td>Golinko</td>
+            <td>emgo</td>
+
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Karen</td>
+            <td>Flower</td>
+            <td>Flowery</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <div class="container">
+    <h2></h2>
+    <p></p>
+    <div class="example">
+      <div class="table-responsive-vertical shadow-z-1">
+  <!-- Table starts here -->
+  <table id="table" class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Link</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-title="ID">1</td>
+          <td data-title="Name">Material Design Sidebar</td>
+          <td data-title="Link"><a href="http://codepen.io/zavoloklom/pen/dIgco" target="_blank">Link</a></td>
+          <td data-title="Status">Completed</td>
+        </tr>
+        <tr>
+          <td data-title="ID">2</td>
+          <td data-title="Name">Material Design Tiles</td>
+          <td data-title="Link">
+            <a href="http://codepen.io/zavoloklom/pen/wtApI" target="_blank">Link</a>
+          </td>
+          <td data-title="Status">Completed</td>
+        </tr>
+        <tr>
+          <td data-title="ID">3</td>
+          <td data-title="Name">Material Design Animation Timing</td>
+          <td data-title="Link">
+            <a href="http://codepen.io/zavoloklom/pen/Jbrho" target="_blank">Link</a>
+          </td>
+          <td data-title="Status">Completed</td>
+        </tr>
+        <tr>
+          <td data-title="ID">4</td>
+          <td data-title="Name">Material Design Iconic Font</td>
+          <td data-title="Link">
+            <a href="http://codepen.io/zavoloklom/pen/uqCsB" target="_blank">Link</a>
+          </td>
+          <td data-title="Status">Completed</td>
+        </tr>
+        <tr>
+          <td data-title="ID">5</td>
+          <td data-title="Name">Material Design Typography</td>
+          <td data-title="Link">
+            <a href="http://codepen.io/zavoloklom/pen/IkaFL" target="_blank">Link</a>
+          </td>
+          <td data-title="Status">Completed</td>
+        </tr>
+        <tr>
+          <td data-title="ID">6</td>
+          <td data-title="Name">Material Design Buttons</td>
+          <td data-title="Link">
+            <a href="http://codepen.io/zavoloklom/pen/Gubja" target="_blank">Link</a>
+          </td>
+          <td data-title="Status">In progress</td>
+        </tr>
+        <tr>
+          <td data-title="ID">7</td>
+          <td data-title="Name">Material Design Form Elements</td>
+          <td data-title="Link">
+            <a href="http://codepen.io/zavoloklom/pen/yaozl" target="_blank">Link</a>
+          </td>
+          <td data-title="Status">In progress</td>
+        </tr>
+        <tr>
+          <td data-title="ID">8</td>
+          <td data-title="Name">Material Design Email Template</td>
+          <td data-title="Link">
+            <a href="http://codepen.io/zavoloklom/pen/qEVqzx" target="_blank">Link</a>
+          </td>
+          <td data-title="Status">In progress</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  </div>
+  <footer>
+    <span>Based On: <a href="https://assemblymade.com/support-foo/wips/97" class="credits">WIP #97 on Assembly</a></span><br>
+    <span>Responsive Table: <a href="http://codepen.io/zavoloklom/pen/IGkDz?editors=110" class="credits">Zavoloklom</a></span>
+  </footer>
+</body>
+</html>
