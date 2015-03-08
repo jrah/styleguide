@@ -48,6 +48,6 @@ gulp.task('sass', function() {
 gulp.task('default', ['sass','browser-sync'], function () {
   // watch sass directory
   gulp.watch(scssDir + '**/**/*.scss', ['sass']);
-  gulp.watch('index.html', ['sass']);
+  // gulp.watch('index.html', []);
 
 });

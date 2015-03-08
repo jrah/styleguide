@@ -1,12 +1,9 @@
 @import 
   "vendor/index",
-  "global/index",
-  // start atomic design
-  "atom/index",
-  "molecule/index",
-  "organism/index",
-  "page/index",
-  "template/index";
+  "base/index",
+  "module/index",
+  "layout/index",
+  "theme/index";
 
 /* Styleguide styles - ignore */
 .container {
@@ -38,7 +35,13 @@
 footer {
   text-align: center;
 }
+// buttons
 
+.btn-container {
+  li {
+    display: inline-block;
+  }
+}
 /* Typography */
 body {
   font-family: $font-family--secondary;
@@ -127,15 +130,7 @@ body {
   color: $grey;
 }
 
-a {
-  color: $color-secondary;
-  border-bottom: 1px solid rgba($color-secondary, .5);
-  
-  &:hover {
-    color: darken($color-secondary, 15%);
-    border-bottom-color: darken($color-secondary, 15%);
-  }
-}
+                                                                                                                                                                            
 
 .c-black {
   background-color: $black;
@@ -173,45 +168,19 @@ a {
   color: $color-secondary;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   color: $black; 
 }
 
-h5 {
-  color: $color-primary;
-}
+
 
 /* Buttons */
 
-.btn-secondary {
-  @extend .btn;
-  background-color: $color-secondary;
-  box-shadow: 0 2px 0 darken($color-secondary, 15%);
-  
-  &:not(.btn-disabled):hover {
-    background-color: darken($color-secondary, 5%);
-  }
-}
-
-.btn-muted {
-  @extend .btn;
-  background-color: $muted;
-  box-shadow: 0 2px 0 darken($muted, 15%);
-  
-  &:not(.btn-disabled):hover {
-    background-color: darken($muted, 5%);
-  }
-}
-
-.btn-disabled {
-  opacity: .5;
-  cursor: default;
-}
-
-.btn-container {
-  li {
-    display: inline-block;
-  }
+.example button {
+  display: block;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  font-size: 1em;
 }
 
 /* Alerts */
@@ -235,7 +204,7 @@ h5 {
 .alert_close {
   border: 0;
   border-left: 2px solid rgba(0, 0, 0, .12);
-  color: $white;
+  color: lighten($muted, 15%);
   font-family: 'Open Sans';
   font-size: 1.8em;
   font-weight: 800;
@@ -248,5 +217,6 @@ h5 {
   
   &:hover {
     color: $white;
+    @include transition(color .25s ease-in-out);
   }
 }

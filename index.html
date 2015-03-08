@@ -15,7 +15,7 @@
     
     <h1>Style Guide</h1>
 
-    <p>Aaron W. Fuller</p> 
+    <p>Client</p> 
 
     <!-- Typography -->
     
@@ -69,16 +69,17 @@
   <div class="container">
   
     <!-- Buttons -->
-    
+    <!-- Buttons are wrapped in p and then a tags adh-hoc, normally add "button.class" --> 
     <h2>Buttons</h2>
     <p>Buttons are used to draw attention by the user to various website functions.</p>
     <div class="example">
-      <p><a href="#" class="btn">Default button</a></p>
-      <p><a href="#" class="btn btn-disabled">Default disabled button</a></p>
-      <p><a href="#" class="btn-secondary">Secondary button</a></p>
-      <p><a href="#" class="btn-secondary btn-disabled">Secondary button disabled</a></p>
-      <p><a href="#" class="btn-muted">Muted button</a></p>
-      <p><a href="#" class="btn-muted btn-disabled">Muted button disabled</a></p>
+      <p><a href="#" class="btn">Anchor Button</a></p>
+      <button class="btn">Button</button>
+      <button class="btn--disabled">Default disabled button</button>
+      <button class="btn--secondary">Secondary button</button>
+      <button class="btn--secondary btn--disabled">Secondary button disabled</button>
+      <button class="btn--muted">Muted button</button>
+      <button class="btn--muted btn--disabled">Muted button disabled</button>
     </div>
   </div>
 
@@ -94,128 +95,105 @@
     </div>
 
   </div>
-
-  <div class="container">
-
     <!-- Tables -->
+  <div class="container">
     <h2>Tables</h2>
     <p>Tables are used to display data for the user.</p>
     <div class="example">
-      <table class="table-responsive-vertical">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td>James</td>
-            <td>Home</td>
-            <td>jrah</td>
-
-          </tr>
-          <tr>
-            <th>2</th>
-            <td>Emily</td>
-            <td>Golinko</td>
-            <td>emgo</td>
-
-          </tr>
-          <tr>
-            <th>3</th>
-            <td>Karen</td>
-            <td>Flower</td>
-            <td>Flowery</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  <div class="container">
-    <h2></h2>
-    <p></p>
-    <div class="example">
-      <div class="table-responsive-vertical shadow-z-1">
-  <!-- Table starts here -->
-  <table id="table" class="table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Link</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-title="ID">1</td>
-          <td data-title="Name">Material Design Sidebar</td>
-          <td data-title="Link"><a href="http://codepen.io/zavoloklom/pen/dIgco" target="_blank">Link</a></td>
-          <td data-title="Status">Completed</td>
-        </tr>
-        <tr>
-          <td data-title="ID">2</td>
-          <td data-title="Name">Material Design Tiles</td>
-          <td data-title="Link">
-            <a href="http://codepen.io/zavoloklom/pen/wtApI" target="_blank">Link</a>
-          </td>
-          <td data-title="Status">Completed</td>
-        </tr>
-        <tr>
-          <td data-title="ID">3</td>
-          <td data-title="Name">Material Design Animation Timing</td>
-          <td data-title="Link">
-            <a href="http://codepen.io/zavoloklom/pen/Jbrho" target="_blank">Link</a>
-          </td>
-          <td data-title="Status">Completed</td>
-        </tr>
-        <tr>
-          <td data-title="ID">4</td>
-          <td data-title="Name">Material Design Iconic Font</td>
-          <td data-title="Link">
-            <a href="http://codepen.io/zavoloklom/pen/uqCsB" target="_blank">Link</a>
-          </td>
-          <td data-title="Status">Completed</td>
-        </tr>
-        <tr>
-          <td data-title="ID">5</td>
-          <td data-title="Name">Material Design Typography</td>
-          <td data-title="Link">
-            <a href="http://codepen.io/zavoloklom/pen/IkaFL" target="_blank">Link</a>
-          </td>
-          <td data-title="Status">Completed</td>
-        </tr>
-        <tr>
-          <td data-title="ID">6</td>
-          <td data-title="Name">Material Design Buttons</td>
-          <td data-title="Link">
-            <a href="http://codepen.io/zavoloklom/pen/Gubja" target="_blank">Link</a>
-          </td>
-          <td data-title="Status">In progress</td>
-        </tr>
-        <tr>
-          <td data-title="ID">7</td>
-          <td data-title="Name">Material Design Form Elements</td>
-          <td data-title="Link">
-            <a href="http://codepen.io/zavoloklom/pen/yaozl" target="_blank">Link</a>
-          </td>
-          <td data-title="Status">In progress</td>
-        </tr>
-        <tr>
-          <td data-title="ID">8</td>
-          <td data-title="Name">Material Design Email Template</td>
-          <td data-title="Link">
-            <a href="http://codepen.io/zavoloklom/pen/qEVqzx" target="_blank">Link</a>
-          </td>
-          <td data-title="Status">In progress</td>
-        </tr>
-      </tbody>
-    </table>
+      <!-- Table starts here -->
+      <p>Table using data attribute.</p>
+        <table class="table--data-attr">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+          <tbody>
+            <tr>
+              <td data-item="ID">1</td>
+              <td data-item="First Name">James</td>
+              <td data-item="Last Name">Home</td>
+              <td data-item="Username">jrah</td>
+            </tr>
+            <tr>
+              <td data-item="ID">2</td>
+              <td data-item="First Name">Emily</td>
+              <td data-item="Last Name">Golinko</td>
+              <td data-item="id">emgo</td>
+            </tr>
+            <tr>
+              <td data-item="ID">3</td>
+              <td data-item="First Name">Karen</td>
+              <td data-item="Last Name">Flower</td>
+              <td data-item="Username">flowery</td>
+            </tr>
+          </tbody>
+        </table>
+      <p>Default table:</p>
+        <table class="table--default">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+          <tbody>
+            <tr>
+              <td >1</td>
+              <td >James</td>
+              <td >Home</td>
+              <td >jrah</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Emily</td>
+              <td>Golinko</td>
+              <td>emgo</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Karen</td>
+              <td>Flower</td>
+              <td>flowery</td>
+            </tr>
+          </tbody>
+        </table>
     </div>
   </div>
+  <div class="container">
+    <h2>Form Fields</h2>
+    <p>Forms are used by the user to input data.</p>
+    <div class="example">
+      <fieldset class="form">
+        <label for="text">Text</label>
+        <input type="text" placeholder="Lorem ipsum">
+        <label for="text">Text</label>
+        <input type="text" placeholder="Lorem ipsum">
+        <label for="text">Text</label>
+        <input type="text" placeholder="Lorem ipsum">
+        <label for="textarea">Textarea</label>
+        <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem saepe maiores, perferendis sequi numquam doloremque, minus cum iusto obcaecati nesciunt necessitatibus beatae placeat. Facilis quos mollitia libero a aspernatur tempora.</textarea>
+        <button type="submit" value="Submit" class="btn--form">Submit</button>
+      </fieldset>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <h2>Partials</h2>
+    <p>Partials represent modular elements on a page such as the search input.</p>
+  </div>
+  <hr>
+  <div class="container">
+    <h2>Search</h2>
+    <p>Search is used by the user to navigate the application quickly if they know the keyword.</p>
+    <div class="example">
+      <input type="search" name="search" id="" value="Search"><button type="submit" class="btn--search btn" value="Go">Go</button>
+    </div>
   </div>
   <footer>
     <span>Based On: <a href="https://assemblymade.com/support-foo/wips/97" class="credits">WIP #97 on Assembly</a></span><br>
