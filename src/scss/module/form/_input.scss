@@ -1,0 +1,7 @@
+input[type='search'], input[type='text'], input[type='number'], input[type='password'], textarea, input[type='email'] {
+	outline: 0;
+	border: 1px solid $muted;
+	padding: $font-size / 2;
+	@include border-radius(2px);
+	color: $muted;
+}

@@ -1,0 +1,24 @@
+.btn {
+  @extend %btn;
+  @include btn--color($color-primary, $white);
+  @include box-shadow();
+
+  @include m(disabled){
+    @extend .btn;
+    @extend %disabled;
+   }
+   @include m(form){
+    @extend .btn;
+    display: block;
+   }
+  @include m(secondary) {
+    @extend %btn;
+    @include btn--color($color-secondary, $white);
+    @include box-shadow(2px, darken($color-secondary, 15%));
+  }
+  @include m(muted){
+    @extend %btn;
+    @include btn--color($muted, $white);
+    @include box-shadow(2px, darken($muted, 15%))
+  }
+}

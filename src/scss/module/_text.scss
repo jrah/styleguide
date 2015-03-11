@@ -1,0 +1,19 @@
+// headings
+
+
+// anchors
+a {
+  color: $color-secondary;
+  border-bottom: 1px solid rgba($color-secondary, .5);
+  
+  &:hover {
+    color: darken($color-secondary, 15%);
+    border-bottom-color: darken($color-secondary, 15%);
+  }
+}
+
+// paragraphs
+
+h1 + p, h2 + p {
+	margin-top: 0;
+}

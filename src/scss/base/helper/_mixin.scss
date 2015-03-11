@@ -1,0 +1,51 @@
+@mixin border-radius($radius: 4px) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-shadow($a: 2px, $c: darken($color-primary, 5%)) {
+	-webkit-box-shadow: $a $a $c;
+	-moz-box-shadow: $a $a $c;
+	box-shadow: $a $a $c;
+}
+
+%clearfix {
+    &:after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+}
+@mixin transition($e ) {
+  -webkit-transition: $e;
+       -o-transition: $e;
+          transition: $e;
+}
+
+
+
+// button color mixin. $bg = background-color, $lc = color (color of text within button), $l = lighten percentage
+
+@mixin btn--color($bg: palette(grey, light), $lc: $black, $l: 5%) {
+  color: $lc;
+  background-color: $bg;
+  &:not(.btn--disabled):hover, &:not(.btn--disabled):focus, &:not(.btn--disabled):active {
+    background-color: lighten($bg, $l);
+    color: $lc;
+  }
+}
+
+// bem selectors so I can be lazy and not have to have the appropriate convention everytime, just generate the relevant class convention
+
+@mixin e ($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m ($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}

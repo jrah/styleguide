@@ -1,0 +1,29 @@
+
+
+
+@function palette($palette, $shade: 'base') {
+	@return map-get(map-get($palletes, $palette), $shade);
+}
+
+@if variable-exists(font-url--primary) {
+	@import url($font-url--primary);
+}
+@if variable-exists(font-url--secondary) {
+	@import url($font-url--secondary);
+}
+
+@mixin mq($break) {
+	@if $break == "small" {
+		@media screen and (max-width: $bp-small)  {
+			@content;
+		}
+	}
+	@else if $break =="large" {
+		@media (min-width: $bp-large) {
+			@content;
+		}
+	}
+	@else {
+		@error "Oopsy, daisy! No value could be retrived from the media query mixin! '#{$break}' " 
+	}
+}
